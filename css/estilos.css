@@ -28,7 +28,7 @@ nav {
     gap: 0;
 }
 
-.trip-planner {
+.lletra-gorda {
     font-size: 24px;
     font-weight: bold;
     color: var(--dark-color);
@@ -76,4 +76,9 @@ main {
         "footer right-side";
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto 100px;
+}
+
+.petit-gray {
+    font-size: 14px;
+    color: var(--light-color);
 }
