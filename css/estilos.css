@@ -1,0 +1,79 @@
+* {
+    margin: 5px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+:root {
+    --primary-color: #FF5A3C;
+    --primary-light-color: rgba(255, 90, 60, 0.1);
+    --dark-color: #0F0F1A;
+    --dark2-color: #1A1A2E;
+    --text-color: #1F2937;
+    --white-color: #FFFFFF;
+    --light-color: #6B7280;
+    --light-border-color: #D1D5DB;
+    --accent-color: #FFB800;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 0;
+}
+
+.trip-planner {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--dark-color);
+    margin-left: 0;
+}
+
+a {
+    color: var(--dark-color);
+    text-decoration: none;
+    margin: 20px;
+    font-weight: bold;
+}
+
+a:hover {
+    color: var(--primary-color);
+}
+
+a:hover::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: var(--primary-color);
+}
+
+.button-marti {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.button-marti:hover {
+    box-shadow: #FF5A3C 0px 4px 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+main {
+    display: grid;
+    grid-template-areas: 
+        "left-side right-side"
+        "footer right-side";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 100px;
+}
