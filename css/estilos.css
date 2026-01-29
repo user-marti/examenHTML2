@@ -159,3 +159,65 @@ img {
 .img-puente {
     display: flex;
 }
+
+.right-side {
+    position: relative;
+    height: 600px;
+    display: block;
+}
+
+.right-side img {
+    object-fit: cover;
+    position: absolute;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.right-side > img:nth-child(1) {
+    width: 280px;
+    height: 400px;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+}
+
+.right-side > img:nth-child(2) {
+    width: 350px;
+    height: 350px;
+    top: 80px;
+    left: 200px;
+    z-index: 2;
+}
+
+.right-side > img:nth-child(3) {
+    width: 220px;
+    height: 300px;
+    top: 280px;
+    left: 80px;
+    z-index: 3;
+}
+
+.right-side .img-puente {
+    position: absolute;
+    bottom: 80px;
+    right: 20px;
+    background: var(--white-color);
+    padding: 15px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    z-index: 4;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+.right-side .img-puente img {
+    position: static;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    order: -1;
+}
+
+.right-side .img-puente p {
+    margin: 2px 0;
+}
