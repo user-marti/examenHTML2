@@ -151,3 +151,11 @@ h1 {
     color: var(--white-color);
     display: flex;
 }
+
+img {
+    border-radius: 20px;
+}
+
+.img-puente {
+    display: flex;
+}
