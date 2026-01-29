@@ -35,6 +35,13 @@ nav {
     margin-left: 0;
 }
 
+.lletra-gorda-t {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-left: 0;
+}
+
 a {
     color: var(--dark-color);
     text-decoration: none;
@@ -76,6 +83,27 @@ main {
         "footer right-side";
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto 100px;
+}
+
+.explore {
+    font-weight: bold;
+    color: var(--primary-color);
+    background-color: var(--primary-light-color);
+    border-radius: 20px;
+    padding: 3px 10px;
+    display: inline-block;
+}
+
+h1 {
+    font-size: 48px;
+    color: var(--dark-color);
+    margin: 10px 0;
+}
+
+.h1-secondary {
+    font-size: 48px;
+    color: var(--primary-color);
+    margin: 10px 0;
 }
 
 .petit-gray {
