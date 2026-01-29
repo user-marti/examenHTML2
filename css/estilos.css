@@ -51,6 +51,7 @@ a {
 
 a:hover {
     color: var(--primary-color);
+    transition: all 0.3s ease;
 }
 
 a:hover::after {
@@ -72,6 +73,23 @@ a:hover::after {
 
 .button-marti:hover {
     box-shadow: #FF5A3C 0px 4px 15px;
+    color: var(--white-color);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.ai-sugg {
+    background-color: transparent;
+    color: var(--black-color);
+    border: 1px solid var(--light-border-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.ai-sugg:hover {
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
     cursor: pointer;
     transition: all 0.3s ease;
 }
